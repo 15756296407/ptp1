@@ -17,10 +17,11 @@
 
 <script>
 import Home from './components/home.vue'
-// var aa = document.getElementById('viewport');
-// let srreenW = window.screen.width;
-// aa.setAttribute('viewport', 'width=device-width,initial-scale=0.8');
-// window.aa = aa;
+var aa = document.getElementById('viewport');
+let srreenW = window.screen.width;
+
+aa.setAttribute('content', 'width=device-width, initial-scale='+srreenW/980+', maximum-scale=1.0, user-scalable=no');
+window.aa = aa;
 export default {
     name: 'app',
     data () {
@@ -55,10 +56,13 @@ export default {
 <style lang="less">
 html,
 body {
-    width: 1010px;
+    width: 980px;
     height: 100%;
     min-height: 100%;
     font-size: 16px;
+}
+ol,ul{
+    list-style:none;
 }
 div,
 ul,

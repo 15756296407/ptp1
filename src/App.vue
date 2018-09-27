@@ -17,10 +17,13 @@
 
 <script>
 import Home from './components/home.vue'
+import './libs/swiper.css'
+import $ from 'jquery'
+window.$ = $;
 var aa = document.getElementById('viewport');
 let srreenW = window.screen.width;
 
-aa.setAttribute('content', 'width=device-width, initial-scale='+srreenW/980+', maximum-scale=1.0, user-scalable=no');
+aa.setAttribute('content', 'width=device-width, initial-scale=' + srreenW / 1010 + ', maximum-scale=1.0, user-scalable=no');
 window.aa = aa;
 export default {
     name: 'app',
@@ -56,13 +59,14 @@ export default {
 <style lang="less">
 html,
 body {
-    width: 980px;
+    width: 1010px;
     height: 100%;
     min-height: 100%;
     font-size: 16px;
 }
-ol,ul{
-    list-style:none;
+ol,
+ul {
+    list-style: none;
 }
 div,
 ul,
